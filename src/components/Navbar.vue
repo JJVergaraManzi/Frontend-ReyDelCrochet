@@ -93,6 +93,11 @@
             
             </v-list-group>
         </v-list-item>
+        <v-list-item class="mb-8">
+            <v-list-item-action>
+              <button @click="logout"><v-icon>fas fa-sign-out-alt</v-icon></button>
+            </v-list-item-action>
+        </v-list-item>
       </v-list>
       <v-container fluid>
         <v-row>
@@ -124,4 +129,17 @@
 </template>
 
 <script>
+import Cookies from "js-cookie";
+export default {
+  methods: {
+    deleteUserLogged() {
+      Cookies.remove('userLogged');
+    },
+    logout() {
+      localStorage.clear();
+      this.deleteUserLogged()
+      this.$router.push('/login');
+    }
+  }
+}
 </script>

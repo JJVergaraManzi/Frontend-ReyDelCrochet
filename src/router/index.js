@@ -4,6 +4,7 @@ import Contacto from '../views/Contacto.vue'
 import Tienda from '../views/Tienda.vue'
 import Home from '../views/Home.vue'
 import Carritojaja from '../views/Carritojaja.vue'
+import Login from '../views/Login.vue'
 import VueAxios from 'vue-axios';
 import axios from 'axios';
 
@@ -87,6 +88,11 @@ const routes = [
     path: '/trapillo',
     name: 'trapillo',
     component: Trapillo
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: Login
   }
 ]
 
