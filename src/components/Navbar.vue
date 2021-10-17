@@ -93,6 +93,12 @@
             
             </v-list-group>
         </v-list-item>
+        <v-list-item router to="/agregarproducto">
+            <v-list-item-icon>
+                <v-icon small>fas fa-dove</v-icon>
+                  </v-list-item-icon>
+            <v-list-item-title>Agregar Producto</v-list-item-title>
+        </v-list-item>
         <v-list-item class="mb-8">
             <v-list-item-action>
               <button @click="logout"><v-icon>fas fa-sign-out-alt</v-icon></button>

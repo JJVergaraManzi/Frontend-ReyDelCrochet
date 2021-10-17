@@ -17,6 +17,7 @@ import Palillos from '../views/Tiendaproductos/Palillos.vue'
 import Tijeras from '../views/Tiendaproductos/Tijeras.vue'
 import Trapillo from '../views/Tiendaproductos/Trapillo.vue'
 
+import Agregarproducto from '../views/Administrador/Agregarproducto.vue'
 
 import VueFusionCharts from 'vue-fusioncharts';
 import FusionCharts from 'fusioncharts';
@@ -93,6 +94,11 @@ const routes = [
     path: '/login',
     name: 'login',
     component: Login
+  },
+  {
+    path: '/agregarproducto',
+    name: 'agregarproducto',
+    component: Agregarproducto
   }
 ]
 
