@@ -5,7 +5,7 @@
         height="1000"
         width="100%" 
         dark
-        src="../assets/123.jpg">
+        >
         <v-row
           align="center"
           justify="center">
