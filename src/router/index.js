@@ -15,7 +15,8 @@ import LanasBaby from '../views/Tiendaproductos/LanasBaby.vue'
 import Palillos from '../views/Tiendaproductos/Palillos.vue'
 import Tijeras from '../views/Tiendaproductos/Tijeras.vue'
 import Trapillo from '../views/Tiendaproductos/Trapillo.vue'
-
+import Login from '../views/Login.vue'
+import Homedos from '../views/Homedos.vue'
 
 import VueFusionCharts from 'vue-fusioncharts';
 import FusionCharts from 'fusioncharts';
@@ -87,6 +88,14 @@ const routes = [
     path: '/trapillo',
     name: 'trapillo',
     component: Trapillo
+  },{
+    path: '/login',
+    name: 'login',
+    component: Login
+  },{
+    path: '/homedos',
+    name: 'homedos',
+    component: Homedos
   }
 ]
 

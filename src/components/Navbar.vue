@@ -9,6 +9,14 @@
           <v-list-item-title>Inicio</v-list-item-title>
         </v-list-item>
 
+        <v-list-item router to="/Login">
+          <v-list-item-icon>
+            <v-icon>fas fa-home</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-title>Homedos</v-list-item-title>
+        </v-list-item>
+
         <v-list-item  router to="/contacto">
           <v-list-item-icon>
             <v-icon>fas fa-phone-alt</v-icon>
@@ -113,4 +121,17 @@
 </template>
 
 <script>
+import Cookies from "js-cookie";
+export default {
+  methods: {
+    deleteUserLogged() {
+      Cookies.remove('userLogged');
+    },
+    logout() {
+      localStorage.clear();
+      this.deleteUserLogged()
+      this.$router.push('/login');
+    }
+  }
+}
 </script>
